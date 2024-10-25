@@ -21,7 +21,7 @@ public class CustomListTest {
     public void addCityTest(){
         list = MockCityList();
         int listSize = list.getCount();
-        City city = new City("Edmonton", "AB");
+        City city = new City(null, null);
         list.addCity(city);
         assertEquals(listSize + 1, list.getCount());
     }
@@ -30,7 +30,7 @@ public class CustomListTest {
     public void deleteCityTest(){
         list = MockCityList();
         int listSize = list.getCount();
-        City city = new City("Edmonton", "AB");
+        City city = new City(null, null);
         list.addCity(city);
         list.delete(city);
         assertEquals(listSize, list.getCount());
